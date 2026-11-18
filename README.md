@@ -1,207 +1,96 @@
-# NASA Publications & Scientific Computing
+# Publications & Scientific Computing
 
 **Artem (Art) Ponomarev, PhD**  
-Space-radiation research · Monte Carlo simulation · DNA-damage modeling · Scientific software
+Space radiation · Monte Carlo modeling · Scientific software · Image analysis · Reliability engineering
 
-A selected bibliography of my authored and coauthored research on radiation transport, chromosome structure, DNA damage and repair, and the interpretation of experimental measurements. The collection brings together NASA-related work, later coauthored publications, and earlier mathematical foundations developed with academic collaborators.
+A research portfolio connecting computational physics, experimental data, and dependable engineering. The collection includes NASA-related radiation research, earlier work in neuroscience and mathematical physics, and later collaborations on electronics and complex-software-system reliability.
 
-**This index contains 16 journal publications, two NASA technical briefs, and two conference abstracts.** An archived 2019 workshop poster is listed separately. It is a curated research portfolio, not a claim to be my complete publication record.
+**Publication record indexed: 1994–2026.** The expanded catalog contains **33 identified journal articles**, **3 proceedings papers/chapters**, **3 NASA technical reports**, **2 NASA Tech Briefs**, and **1 doctoral dissertation**. Conference abstracts, posters, software disclosures, and unresolved manuscript versions are kept separate. Public-source and CV-derived records are explicitly distinguished.
 
-[Start here](#start-here) · [Journal publications](#journal-publications) · [Earlier foundations](#earlier-foundations-19992001) · [NASA software briefs](#nasa-software-and-technical-briefs) · [Conference contributions](#conference-contributions) · [Repository files](#files-in-this-repository) · [Related code](#related-code)
+**[Browse the publication catalog →](PUBLICATIONS.md)**  
+[Conference abstracts & presentations](PRESENTATIONS.md) · [Research highlights](#research-highlights) · [Archived PDFs](#archived-pdfs) · [Related software](#related-software) · [Sources & verification](#sources-and-verification)
 
-## Start here
+## Research highlights
 
-| Interest | Suggested starting point | What it covers |
+| Year | Start here | Focus |
 |---|---|---|
-| Scientific-software architecture | [RITCARD (2019)](#ritcard-2019) | Chromosome geometry, radiation damage, repair, and aberration scoring in a simulation program. |
-| Model–experiment comparison | [Mixed radiation fields and shielding (2020)](#mixed-fields-2020) | A multiscale modeling and experimental study of chromosome aberrations behind shielding. |
-| Stochastic modeling | [Time-dependent aberration model (2014)](#time-dependent-model-2014) | DNA-repair kinetics and aberration formation in normal and repair-deficient cells. |
-| Image analysis | [Image-based modeling (2007)](#image-based-modeling-2007) | Comparing simulated DNA-damage patterns with microscopy observations. |
-| Radiation-transport software | [GERM technical brief (2013)](#germ-2013) | Event-based modeling of cosmic-ray and heavy-ion transport and energy deposition. |
+| **2026** | [Complex Software Systems: Two Non-Software Reliability Concerns](PUBLICATIONS.md#J01) | Collaboration with Ephraim Suhir, Zoran Stamenkovic, and Eugene Suhir on hardware reliability and human-in-the-loop performance. |
+| **2024** | [DNA break clustering as a predictor of cell death](PUBLICATIONS.md#J02) | Radiation quality, cell geometry, and beam orientation in computational cell-death modeling. |
+| **2020** | [Chromosome aberrations in mixed fields generated with shielding](PUBLICATIONS.md#J03) | Connecting radiation transport, shielding, and biological measurements. |
+| **2019** | [RITCARD](PUBLICATIONS.md#J04) | Chromosome geometry, radiation-induced damage, repair, and aberration scoring in scientific simulation software. |
+| **2019** | [Useful lifetime of aerospace electronics: BAZ model](PUBLICATIONS.md#J05) | Work with Ephraim Suhir on incorporating ionizing-radiation exposure into lifetime prediction. |
+| **2014** | [Time-dependent chromosome-aberration model](PUBLICATIONS.md#J07) | Repair kinetics in normal and repair-deficient human cells. |
+| **2007** | [Image-based modeling of DNA-damage redistribution](PUBLICATIONS.md#J16) | Comparing computational damage patterns with microscopy observations. |
+| **2003** | [Adjustable-threshold 3D image segmentation](PUBLICATIONS.md#J23) | Automated identification and localization of objects in biological images. |
 
-## Research themes
+## Explore by research area
 
-The publications connect physical exposure models to biological observations through computational methods:
+| Area | Representative records |
+|---|---|
+| **Radiation transport and shielding** | [Mixed fields](PUBLICATIONS.md#J03), [nanovolume energy deposition](PUBLICATIONS.md#J08), [nuclear interactions](PUBLICATIONS.md#J12), [NASA technical reports](PUBLICATIONS.md#nasa-technical-reports), [GERM](PUBLICATIONS.md#nasa-tech-briefs). |
+| **DNA damage, repair, and chromosome aberrations** | [DNA clustering](PUBLICATIONS.md#J02), [RITCARD](PUBLICATIONS.md#J04), [repair kinetics](PUBLICATIONS.md#J07), [aberration yields](PUBLICATIONS.md#J09), [chromatin geometry](PUBLICATIONS.md#J25). |
+| **Image analysis and neuroscience** | [DNA-damage imaging](PUBLICATIONS.md#J16), [olfactory memory](PUBLICATIONS.md#J22), [3D segmentation](PUBLICATIONS.md#J23). |
+| **Stochastic methods and mathematical physics** | [DNA fragment distributions](PUBLICATIONS.md#J27), [polymer diffusion](PUBLICATIONS.md#J28), [polymer adsorption](PUBLICATIONS.md#J29), [stochastic cluster processes](PUBLICATIONS.md#J31), [plasma physics](PUBLICATIONS.md#J32). |
+| **Reliability engineering** | [Complex software systems](PUBLICATIONS.md#J01), [radiation-exposed aerospace electronics](PUBLICATIONS.md#J05). |
+
+Across the radiation-modeling work, the computational chain is:
 
 ```text
-Particle tracks and radiation transport
-                  |
-                  v
+Particle tracks and energy deposition
+                  ↓
 Chromatin geometry and DNA-damage distributions
-                  |
-                  v
+                  ↓
 Repair kinetics and chromosome aberrations
-                  |
-                  v
-Experimental comparison, image analysis, and risk-model inputs
+                  ↓
+Experimental comparison and biological interpretation
 ```
 
-The portfolio includes numerical simulation, analytical benchmarking, stochastic background correction, scientific visualization, and collaborative experimental interpretation. Each publication defines its own methods and validation scope; a related software repository should not be assumed to reproduce every result in a paper.
+Each paper defines its own assumptions, implementation, and validation scope. A linked code archive should not be assumed to reproduce every result in the publication catalog.
 
-## Journal publications
+## Conference and presentation history
 
-Entries retain the published author order. **Bold type identifies my name**, not sole authorship. DOI, PubMed, publisher, and institutional links provide the bibliographic sources. Years below follow the cited journal issue where available; an earlier online-publication date may differ.
+[**Open the presentation register →**](PRESENTATIONS.md)
 
-### 2020–2011: chromosome aberrations, biomarkers, and tissue modeling
+The register includes nine individually described NASA-source/CV-linked conference records, followed by a broader historical presentation register spanning **1997–2019**. Six 2018–2019 abstracts are cross-checked against NASA's Task Book bibliography, including the first-authored poster **Computer visualization of the experimental count of chromosomal aberrations**.
 
-<a id="mixed-fields-2020"></a>
-**1. Determination of Chromosome Aberrations in Human Fibroblasts Irradiated by Mixed Fields Generated with Shielding**  
-Slaba TC, Plante I, **Ponomarev A**, Patel ZS, Hada M.  
-*Radiation Research*. **2020**;194(3):246–258.  
-[DOI: 10.1667/RR15366.1](https://doi.org/10.1667/RR15366.1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/32942302/)
+Related presentations are grouped where appropriate; a repeated talk, a poster, and a journal article are not treated as three journal publications. CV date or author-order discrepancies are called out rather than silently converted into confirmed facts.
 
-<a id="ritcard-2019"></a>
-**2. RITCARD: Radiation-Induced Tracks, Chromosome Aberrations, Repair and Damage**  
-Plante I, **Ponomarev A**, Patel Z, Slaba T, Hada M.  
-*Radiation Research*. **2019**;192(3):282–298.  
-[DOI: 10.1667/RR15250.1](https://doi.org/10.1667/RR15250.1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/31295089/) · [Archived PDF](RR15250.1.pdf)
+## Archived PDFs
 
-**3. Evaluating biomarkers to model cancer risk post cosmic ray exposure**  
-Sridharan DM, Asaithamby A, Blattnig SR, Costes SV, Doetsch PW, Dynan WS, Hahnfeldt P, Hlatky L, Kidane Y, Kronenberg A, Naidu MD, Peterson LE, Plante I, **Ponomarev AL**, Saha J, Snijders AM, Srinivasan K, Tang J, Werner E, Pluth JM.  
-*Life Sciences in Space Research*. **2016**;9:19–47. **Review article.**  
-[DOI: 10.1016/j.lssr.2016.05.004](https://doi.org/10.1016/j.lssr.2016.05.004) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/27345199/) · [Institutional record](https://utsouthwestern.elsevierpure.com/en/publications/evaluating-biomarkers-to-model-cancer-risk-post-cosmic-ray-exposu) · [Archived PDF](EvaluatingBiomarkers2016.pdf)
-
-<a id="time-dependent-model-2014"></a>
-**4. Generalized Time-Dependent Model of Radiation-Induced Chromosomal Aberrations in Normal and Repair-Deficient Human Cells**  
-**Ponomarev AL**, George K, Cucinotta FA.  
-*Radiation Research*. **2014**;181(3):284–292.  
-[DOI: 10.1667/RR13303.1](https://doi.org/10.1667/RR13303.1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/24611656/)
-
-**5. Computational Model of Chromosome Aberration Yield Induced by High- and Low-LET Radiation Exposures**  
-**Ponomarev AL**, George K, Cucinotta FA.  
-*Radiation Research*. **2012**;177(6):727–737.  
-[DOI: 10.1667/RR2659.1](https://doi.org/10.1667/RR2659.1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/22490019/)
-
-**6. A model of the effects of heavy ion radiation on human tissue**  
-**Ponomarev AL**, Sundaresan A, Vazquez ME, Guida P, Kim A, Cucinotta FA.  
-*Advances in Space Research*. **2011**;47(1):37–48.  
-[DOI: 10.1016/j.asr.2010.08.014](https://doi.org/10.1016/j.asr.2010.08.014) · [Institutional record](https://experts.llu.edu/en/publications/a-model-of-the-effects-of-heavy-ion-radiation-on-human-tissue/) · [NASA bibliography](https://taskbook.nasa.gov/tbp/spaceline/current2011/03-04/index.html)
-
-### 2008–2006: spatial damage patterns, image analysis, and statistical correction
-
-**7. Stochastic properties of radiation-induced DSB: DSB distributions in large scale chromatin loops, the HPRT gene and within the visible volumes of DNA repair foci**  
-**Ponomarev AL**, Costes SV, Cucinotta FA.  
-*International Journal of Radiation Biology*. **2008**;84(11):916–929.  
-[DOI: 10.1080/09553000802499212](https://doi.org/10.1080/09553000802499212) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/19016140/)
-
-<a id="image-based-modeling-2007"></a>
-**8. Image-Based Modeling Reveals Dynamic Redistribution of DNA Damage into Nuclear Sub-Domains**  
-Costes SV, **Ponomarev A**, Chen JL, Nguyen D, Cucinotta FA, Barcellos-Hoff MH.  
-*PLoS Computational Biology*. **2007**;3(8):e155.  
-[DOI: 10.1371/journal.pcbi.0030155](https://doi.org/10.1371/journal.pcbi.0030155) · [Open full text in PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC1937017/)
-
-**9. Subtraction of background damage in PFGE experiments on DNA fragment-size distributions**  
-**Ponomarev AL**, Belli M, Hahnfeldt PJ, Hlatky L, Sachs RK, Cucinotta FA.  
-*Radiation and Environmental Biophysics*. **2007**;46(2):155–160.  
-[DOI: 10.1007/s00411-007-0098-z](https://doi.org/10.1007/s00411-007-0098-z) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/17406880/)
-
-**10. A Robust Procedure for Removing Background Damage in Assays of Radiation-Induced DNA Fragment Distributions**  
-**Ponomarev AL**, Belli M, Hahnfeldt PJ, Hlatky L, Sachs RK, Cucinotta FA.  
-*Radiation Research*. **2006**;166(6):908–916.  
-[DOI: 10.1667/RR0663.1](https://doi.org/10.1667/RR0663.1) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/17149980/)
-
-**11. Chromatin loops are responsible for higher counts of small DNA fragments induced by high-LET radiation, while chromosomal domains do not affect the fragment sizes**  
-**Ponomarev AL**, Cucinotta FA.  
-*International Journal of Radiation Biology*. **2006**;82(4):293–305.  
-[DOI: 10.1080/09553000600637716](https://doi.org/10.1080/09553000600637716) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/16690597/)
-
-**12. Nuclear fragmentation and the number of particle tracks in tissue**  
-**Ponomarev AL**, Cucinotta FA.  
-*Radiation Protection Dosimetry*. **2006**;122(1–4):354–361.  
-[DOI: 10.1093/rpd/ncl465](https://doi.org/10.1093/rpd/ncl465) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/17261538/)  
-*Date note: the journal issue is dated 2006; PubMed also records electronic publication on January 29, 2007.*
-
-## Earlier foundations, 1999–2001
-
-These papers provide the mathematical and computational background to the later radiation-research models. They are listed separately rather than assigning all work to the same employer or period.
-
-**13. Extrapolation of the DNA Fragment-Size Distribution after High-Dose Irradiation to Predict Effects at Low Doses**  
-**Ponomarev AL**, Cucinotta FA, Sachs RK, Brenner DJ, Peterson LE.  
-*Radiation Research*. **2001**;156(5 Pt 2):594–597.  
-DOI: `10.1667/0033-7587(2001)156[0594:EOTDFS]2.0.CO;2` · [PubMed](https://pubmed.ncbi.nlm.nih.gov/11604078/) · [Columbia bibliography](https://www.crr.columbia.edu/raraf/our-research/raraf-publications)
-
-**14. Radiation breakage of DNA: a model based on random-walk chromatin structure**  
-**Ponomarev AL**, Sachs RK.  
-*Journal of Mathematical Biology*. **2001**;43(4):356–376.  
-[DOI: 10.1007/s002850100098](https://doi.org/10.1007/s002850100098) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/12120873/)
-
-**15. A polymer, random walk model for the size-distribution of large DNA fragments after high linear energy transfer radiation**  
-**Ponomarev AL**, Brenner D, Hlatky LR, Sachs RK.  
-*Radiation and Environmental Biophysics*. **2000**;39(2):111–120.  
-[DOI: 10.1007/s004119900040](https://doi.org/10.1007/s004119900040) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/10929379/)
-
-**16. Polymer chromosome models and Monte Carlo simulations of radiation breaking DNA**  
-**Ponomarev AL**, Sachs RK.  
-*Bioinformatics*. **1999**;15(12):957–964.  
-[DOI: 10.1093/bioinformatics/15.12.957](https://doi.org/10.1093/bioinformatics/15.12.957) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/10745984/) · [UC Berkeley research page](https://math.berkeley.edu/~sachs/sachsresearch/papers9900/ponoab.html)
-
-## NASA software and technical briefs
-
-These are **NASA Tech Briefs**, not additional peer-reviewed journal articles or granted patents. The identifiers below are NASA report/new-technology identifiers.
-
-<a id="germ-2013"></a>
-### Galactic Cosmic Ray Event-Based Risk Model (GERM) Code — 2013
-
-Cucinotta FA, Plante I, **Ponomarev AL**, Kim M-HY.  
-*NASA Tech Briefs*, May 2013. **MSC-24760-1**.  
-[NASA Technical Reports Server record 20130013580](https://ntrs.nasa.gov/citations/20130013580)
-
-The public record describes event-based transport and energy-deposition calculations for cosmic rays and heavy-ion beams, including physical and biophysical outputs for radiation studies.
-
-### GUI to Facilitate Research on Biological Damage from Radiation — 2010
-
-Cucinotta FA, **Ponomarev AL**.  
-*NASA Tech Briefs*, January 2010. **MSC-23853-1**.  
-[NASA Technical Reports Server record 20100001341](https://ntrs.nasa.gov/citations/20100001341)
-
-A graphical workspace connecting radiation-track calculations, DNA-damage modeling, pattern recognition, and visualization. Consult the source record for the historical implementation environment.
-
-## Conference contributions
-
-The following NASA records are classified as **abstracts**. They are retained separately from journal papers, even when the work is related.
-
-### Simulation of DNA Damage in Human Cells from Space Radiation Using a Physical Model of Stochastic Particle Tracks and Chromosomes — 2015
-
-**Ponomarev A**, Plante I, Hada M, George K, Wu H.  
-International Congress of Radiation Research, Kyoto, Japan, May 25–29, 2015. **JSC-CN-32536**.  
-[NASA NTRS record 20140017147](https://ntrs.nasa.gov/citations/20140017147)
-
-*Date note: the identifier begins with 2014, but NTRS lists publication in 2015 and the ICRR 2015 meeting. The identifier is not the publication year.*
-
-### A Monte-Carlo Model for the Formation of Radiation-induced Chromosomal Aberrations — 2009
-
-**Ponomarev AL**, Cornforth MN, Loucas BD, Cucinotta FA.  
-Radiation Research Society 55th Annual Meeting, October 4–7, 2009. **JSC-18143**.  
-[NASA NTRS record 20090015900](https://ntrs.nasa.gov/citations/20090015900)
-
-## Files in this repository
-
-| Existing file | Description |
+| File | Document |
 |---|---|
-| [`RR15250.1.pdf`](RR15250.1.pdf) | Archived RITCARD paper; see journal entry 2 for the full citation and authoritative record. |
-| [`EvaluatingBiomarkers2016.pdf`](EvaluatingBiomarkers2016.pdf) | Archived biomarkers review; see journal entry 3. |
-| [`PosterHRP_IWS2019_ArtemPonomarev.pdf`](PosterHRP_IWS2019_ArtemPonomarev.pdf) | Archived 2019 HRP Investigators' Workshop poster; consult the poster for its full title, authors, and presentation details. |
+| [`RR15250.1.pdf`](RR15250.1.pdf) | **RITCARD: Radiation-Induced Tracks, Chromosome Aberrations, Repair and Damage** — *Radiation Research*, 2019;192(3):282–298. [Full citation](PUBLICATIONS.md#J04). |
+| [`EvaluatingBiomarkers2016.pdf`](EvaluatingBiomarkers2016.pdf) | **Evaluating biomarkers to model cancer risk post cosmic ray exposure** — *Life Sciences in Space Research*, 2016;9:19–47. [Full citation](PUBLICATIONS.md#J06). |
+| [`PosterHRP_IWS2019_ArtemPonomarev.pdf`](PosterHRP_IWS2019_ArtemPonomarev.pdf) | **Computer visualization of the experimental count of chromosomal aberrations** — NASA HRP Investigators' Workshop, 2019. [Conference record](PRESENTATIONS.md#p01--computer-visualization-of-the-experimental-count-of-chromosomal-aberrations). |
 
-Most additional works are indexed through DOI or official source links rather than duplicated as PDFs. A citation link does not imply that the full text is freely downloadable or that this repository includes a copy.
+Other publications are linked through their DOI, publisher, PubMed, NASA, or institutional record. An indexed citation does not imply that a full-text PDF is stored here or freely available.
 
-## Related code
+## Related software
 
-[**Space-Radiation Modeling and Chromosome-Aberration Analysis — C# archive**](https://github.com/artemponomarevjetski/NASA-csharp-reinforcement-learning-for-space-particles)
+[**Space-radiation modeling and chromosome-aberration analysis — C# archive**](https://github.com/artemponomarevjetski/NASA-csharp-reinforcement-learning-for-space-particles)
 
-The companion repository contains legacy C# source for chromosome/genome representations, radiation-damage calculations, rules-based aberration classification, visualization, and reporting. Its README describes the implementation and historical build requirements. The repository's name includes reinforcement learning, but that name alone does not establish a trained reinforcement-learning implementation.
+The companion repository contains legacy scientific-software work associated with chromosome/genome representations, radiation-damage modeling, classification, visualization, and reporting. Its README is the starting point for implementation and historical build context.
 
-RITCARD, NASARTI, and GERM are related research/software names, not interchangeable releases. The linked C# snapshot should not be described as the complete source distribution of every code or publication listed here.
+**NASARTI, RITCARD, RITRACKS, and GERM are related but distinct software/model names.** The companion repository is not asserted to be the complete source distribution of all four systems. Its historical repository name includes “reinforcement learning”; that name alone is not evidence of a trained reinforcement-learning implementation.
 
-## Citation and attribution
+## Sources and verification
 
-Cite the original paper, report, or abstract when discussing a scientific result. Preserve the full author list and use the DOI or NASA record to identify the work precisely. This repository is a personal research index, not an official NASA publication service.
+The catalog was expanded from author-supplied CVs and publication artifacts, then reconciled with public bibliographic records where available. Private contact details, personal records, email threads, and unpublished manuscript full text have not been uploaded.
 
-Later work by other researchers may build on these methods, but it should be identified as related work rather than added to my authored-publication list without verified coauthorship. No citation counts or completeness claims are inferred from this selection.
+Primary discovery and verification sources include [NASA NTRS](https://ntrs.nasa.gov/), the [NASA Task Book report for task 12380](https://taskbook.nasaprs.com/tbp/tbpdf.cfm?id=12380), [NASA Langley's Space Radiation Group bibliography](https://spaceradiation.larc.nasa.gov/journalarticles.html), [PubMed](https://pubmed.ncbi.nlm.nih.gov/), journal publishers, and institutional research pages. Research profiles are discovery aids, not a substitute for checking the actual author list.
 
-## Corrections and availability
+### Publication status matters
 
-For a missing or corrected entry, open an issue or pull request with the exact title, author list, year, venue, DOI or official record, and document type. Prefer publisher records, PubMed/PMC, NASA NTRS, and institutional bibliographies over unverified profile summaries.
+The published **2026 Suhir collaboration** is cataloged as J01. A related **2026 space-safety manuscript** is recorded separately under [manuscript history](PUBLICATIONS.md#manuscript-history-and-unresolved-records); it is **not counted as a second published paper** without a distinct final citation. Historical 2019 provisional manuscripts and an earlier DNA-clustering manuscript are handled the same way.
 
-Existing PDFs retain their original notices. New full-text files should be added only when the relevant sharing permissions are established; this README does not grant additional rights to a publisher's work or introduce a new repository license.
+Papers by former collaborators that cite these models are **related work**, not automatically my coauthored publications. For example, the bookmarked [bi-exponential-repair poster](https://ntrs.nasa.gov/citations/20200001304) cites RITCARD and Ponomarev–Sachs work but does not list Ponomarev as an author.
 
-*Bibliographic metadata reviewed November 17, 2026. Links and metadata were checked against public records; the review does not imply that every full text or experimental result was independently re-evaluated.*
+### How to cite or suggest a correction
+
+Cite the original paper, report, or abstract using its author list and persistent identifier. For corrections or additions, open an issue or pull request with the title, authors in published order, year, venue, document type, DOI or NASA identifier, and supporting source. CV-derived metadata and version relationships still awaiting reconciliation are marked in the catalog.
+
+This is a **personal research portfolio**, not an official NASA publication service. The catalog is an expanded record, not a certified exhaustive career total. Existing PDFs retain their original notices; linking or indexing a work does not grant redistribution rights or introduce a new license.
+
+---
+
+**Last consolidated: November 17, 2026.**
