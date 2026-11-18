@@ -3,37 +3,46 @@
 **Artem (Art) Ponomarev, PhD**  
 Space radiation · Monte Carlo modeling · Scientific software · Image analysis · Reliability engineering
 
-A research portfolio connecting computational physics, experimental data, and dependable engineering. The collection includes NASA-related radiation research, earlier work in neuroscience and mathematical physics, and later collaborations on electronics and complex-software-system reliability.
+A research portfolio connecting computational physics, experimental observations, and software engineering. The archive includes NASA-related radiation research, earlier mathematical and imaging work, and later collaborations on electronics and complex-software-system reliability.
 
-**Publication record indexed: 1994–2026.** The expanded catalog contains **33 identified journal articles**, **3 proceedings papers/chapters**, **3 NASA technical reports**, **2 NASA Tech Briefs**, and **1 doctoral dissertation**. Conference abstracts, posters, software disclosures, and unresolved manuscript versions are kept separate. Public-source and CV-derived records are explicitly distinguished.
+## Start here
 
-**[Browse the publication catalog →](PUBLICATIONS.md)**  
-[Conference abstracts & presentations](PRESENTATIONS.md) · [Research highlights](#research-highlights) · [Archived PDFs](#archived-pdfs) · [Related software](#related-software) · [Sources & verification](#sources-and-verification)
+**[Publication catalog](PUBLICATIONS.md)** · **[Individual papers & access guides](publications/README.md)** · **[Public research CV](cv/Artem_Ponomarev_Public_Research_CV.md)** · **[Honors & training](HONORS_AND_TRAINING.md)**
+
+[Presentations](PRESENTATIONS.md) · [Existing PDFs](#existing-pdf-files) · [Research areas](#research-areas) · [Related work](RELATED_WORK.md) · [Software](#related-software)
+
+The catalog spans **1994–2026** and contains **33 journal-article records**, **3 proceedings papers/chapters**, **3 NASA technical reports**, **2 NASA Tech Briefs**, and **1 doctoral dissertation**. All **42 catalog entries** now have an individual Markdown access guide. These are document-category totals, not a claim that every career publication has been recovered or independently verified. CV-derived metadata and unresolved manuscript versions remain explicitly labeled.
+
+## Recent work with Ephraim Suhir
+
+| Published work | Citation | Read / locate |
+|---|---|---|
+| **Complex Software Systems: Two Non-Software Reliability Concerns** | Ephraim Suhir, Zoran Stamenkovic, Artem Ponomarev, and Eugene Suhir. *Open Access Journal of Physics and Science*, **2026;3(3)**. DOI **10.61440/OAJPS.2026.v3.52**. Publisher date: **September 30, 2026**. | [Individual record](publications/2026-suhir-complex-software-reliability.md) · [Publisher PDF](https://oaskpublishers.com/assets/article-pdf/complex-software-systems-two-non-software-reliability-concerns.pdf) |
+| **Predicted Useful Lifetime of Aerospace Electronics Experiencing Ionizing Radiation: Application of BAZ Model** | Artem Ponomarev and Ephraim Suhir. *Journal of Aerospace Engineering and Mechanics*, **2019;3(1):167–169**. DOI **10.36959/422/437**. Published online **April 25, 2019**. | [Individual record](publications/2019-ponomarev-suhir-baz-model.md) · [Publisher PDF](https://scholars.direct/Articles/aerospace-engineering-and-mechanics/jaem-3-017.pdf) |
+
+**The 2026 paper is published, not awaiting review.** Earlier submission destinations and working titles are manuscript history, not the final journal citation or evidence of an additional published paper. The older collaboration is from **2019**, not 2020.
 
 ## Research highlights
 
-| Year | Start here | Focus |
+| Year | Starting point | Research focus |
 |---|---|---|
-| **2026** | [Complex Software Systems: Two Non-Software Reliability Concerns](PUBLICATIONS.md#J01) | Collaboration with Ephraim Suhir, Zoran Stamenkovic, and Eugene Suhir on hardware reliability and human-in-the-loop performance. |
-| **2024** | [DNA break clustering as a predictor of cell death](PUBLICATIONS.md#J02) | Radiation quality, cell geometry, and beam orientation in computational cell-death modeling. |
-| **2020** | [Chromosome aberrations in mixed fields generated with shielding](PUBLICATIONS.md#J03) | Connecting radiation transport, shielding, and biological measurements. |
-| **2019** | [RITCARD](PUBLICATIONS.md#J04) | Chromosome geometry, radiation-induced damage, repair, and aberration scoring in scientific simulation software. |
-| **2019** | [Useful lifetime of aerospace electronics: BAZ model](PUBLICATIONS.md#J05) | Work with Ephraim Suhir on incorporating ionizing-radiation exposure into lifetime prediction. |
-| **2014** | [Time-dependent chromosome-aberration model](PUBLICATIONS.md#J07) | Repair kinetics in normal and repair-deficient human cells. |
-| **2007** | [Image-based modeling of DNA-damage redistribution](PUBLICATIONS.md#J16) | Comparing computational damage patterns with microscopy observations. |
-| **2003** | [Adjustable-threshold 3D image segmentation](PUBLICATIONS.md#J23) | Automated identification and localization of objects in biological images. |
+| 2024 | [DNA break clustering, geometry, and beam orientation](publications/J02.md) | Computational modeling of cell-death outcomes across radiation qualities. |
+| 2020 | [Mixed fields generated with shielding](publications/J03.md) | Connecting radiation exposure models with chromosome-aberration measurements. |
+| 2019 | [RITCARD](publications/J04.md) | Chromosome geometry, radiation damage, repair, and aberration scoring. |
+| 2016 | [Biomarkers review](publications/J06.md) | Evaluating candidate inputs for post-exposure risk models. |
+| 2014 | [Time-dependent chromosome-aberration model](publications/J07.md) | Repair kinetics in normal and repair-deficient cells. |
+| 2007 | [Image-based modeling of DNA-damage redistribution](publications/J16.md) | Comparing model-derived damage patterns with microscopy. |
+| 2003 | [Adjustable-threshold 3D image segmentation](publications/J23.md) | Identification of objects in biological images. |
 
-## Explore by research area
+## Research areas
 
 | Area | Representative records |
 |---|---|
-| **Radiation transport and shielding** | [Mixed fields](PUBLICATIONS.md#J03), [nanovolume energy deposition](PUBLICATIONS.md#J08), [nuclear interactions](PUBLICATIONS.md#J12), [NASA technical reports](PUBLICATIONS.md#nasa-technical-reports), [GERM](PUBLICATIONS.md#nasa-tech-briefs). |
-| **DNA damage, repair, and chromosome aberrations** | [DNA clustering](PUBLICATIONS.md#J02), [RITCARD](PUBLICATIONS.md#J04), [repair kinetics](PUBLICATIONS.md#J07), [aberration yields](PUBLICATIONS.md#J09), [chromatin geometry](PUBLICATIONS.md#J25). |
-| **Image analysis and neuroscience** | [DNA-damage imaging](PUBLICATIONS.md#J16), [olfactory memory](PUBLICATIONS.md#J22), [3D segmentation](PUBLICATIONS.md#J23). |
-| **Stochastic methods and mathematical physics** | [DNA fragment distributions](PUBLICATIONS.md#J27), [polymer diffusion](PUBLICATIONS.md#J28), [polymer adsorption](PUBLICATIONS.md#J29), [stochastic cluster processes](PUBLICATIONS.md#J31), [plasma physics](PUBLICATIONS.md#J32). |
-| **Reliability engineering** | [Complex software systems](PUBLICATIONS.md#J01), [radiation-exposed aerospace electronics](PUBLICATIONS.md#J05). |
-
-Across the radiation-modeling work, the computational chain is:
+| Radiation transport and shielding | [Mixed fields](publications/J03.md), [nanovolume energy deposition](publications/J08.md), [nuclear interactions](publications/J12.md), [spacecraft ray tracing](publications/R02.md), [GERM](publications/T01.md). |
+| DNA damage, repair, and chromosome aberrations | [DNA clustering](publications/J02.md), [RITCARD](publications/J04.md), [repair kinetics](publications/J07.md), [aberration yields](publications/J09.md), [chromatin geometry](publications/J25.md). |
+| Image analysis and neuroscience | [DNA-damage imaging](publications/J16.md), [olfactory memory](publications/J22.md), [3D segmentation](publications/J23.md). |
+| Stochastic methods and mathematical physics | [DNA fragment distributions](publications/J27.md), [polymer diffusion](publications/J28.md), [polymer adsorption](publications/J29.md), [cluster processes](publications/J31.md), [plasma physics](publications/J32.md). |
+| Reliability engineering | [Complex software systems](publications/2026-suhir-complex-software-reliability.md), [radiation-exposed electronics](publications/2019-ponomarev-suhir-baz-model.md). |
 
 ```text
 Particle tracks and energy deposition
@@ -45,52 +54,42 @@ Repair kinetics and chromosome aberrations
 Experimental comparison and biological interpretation
 ```
 
-Each paper defines its own assumptions, implementation, and validation scope. A linked code archive should not be assumed to reproduce every result in the publication catalog.
+Each paper defines its own assumptions and validation scope. A software archive should not be assumed to reproduce every result in the catalog.
 
-## Conference and presentation history
+## Existing PDF files
 
-[**Open the presentation register →**](PRESENTATIONS.md)
-
-The register includes nine individually described NASA-source/CV-linked conference records, followed by a broader historical presentation register spanning **1997–2019**. Six 2018–2019 abstracts are cross-checked against NASA's Task Book bibliography, including the first-authored poster **Computer visualization of the experimental count of chromosomal aberrations**.
-
-Related presentations are grouped where appropriate; a repeated talk, a poster, and a journal article are not treated as three journal publications. CV date or author-order discrepancies are called out rather than silently converted into confirmed facts.
-
-## Archived PDFs
-
-| File | Document |
+| Repository file | Document |
 |---|---|
-| [`RR15250.1.pdf`](RR15250.1.pdf) | **RITCARD: Radiation-Induced Tracks, Chromosome Aberrations, Repair and Damage** — *Radiation Research*, 2019;192(3):282–298. [Full citation](PUBLICATIONS.md#J04). |
-| [`EvaluatingBiomarkers2016.pdf`](EvaluatingBiomarkers2016.pdf) | **Evaluating biomarkers to model cancer risk post cosmic ray exposure** — *Life Sciences in Space Research*, 2016;9:19–47. [Full citation](PUBLICATIONS.md#J06). |
-| [`PosterHRP_IWS2019_ArtemPonomarev.pdf`](PosterHRP_IWS2019_ArtemPonomarev.pdf) | **Computer visualization of the experimental count of chromosomal aberrations** — NASA HRP Investigators' Workshop, 2019. [Conference record](PRESENTATIONS.md#p01--computer-visualization-of-the-experimental-count-of-chromosomal-aberrations). |
+| [`RR15250.1.pdf`](RR15250.1.pdf) | RITCARD paper, 2019. [Citation and access guide](publications/J04.md). |
+| [`EvaluatingBiomarkers2016.pdf`](EvaluatingBiomarkers2016.pdf) | Biomarkers review, 2016. [Citation and license note](publications/J06.md). |
+| [`PosterHRP_IWS2019_ArtemPonomarev.pdf`](PosterHRP_IWS2019_ArtemPonomarev.pdf) | *Computer visualization of the experimental count of chromosomal aberrations*, 2019 workshop poster. [Presentation register](PRESENTATIONS.md). |
 
-Other publications are linked through their DOI, publisher, PubMed, NASA, or institutional record. An indexed citation does not imply that a full-text PDF is stored here or freely available.
+**These are the three existing PDF files.** Other individual records provide DOI links, publisher-hosted PDFs, NASA records, or exact-title/library-search instructions. An external download link does not mean a binary file has been uploaded here. The PPTX source, original academic CV PDF, and Columbia transcript PDF are not represented as uploaded files in this README.
 
-## Related software
+## CV, honors, and training
 
-[**Space-radiation modeling and chromosome-aberration analysis — C# archive**](https://github.com/artemponomarevjetski/NASA-csharp-reinforcement-learning-for-space-particles)
+The [public research CV](cv/Artem_Ponomarev_Public_Research_CV.md) is a readable Markdown edition based on the latest supplied long-form academic CV, with a linked publication appendix. Its employment-history coverage is stated explicitly; it is not the original PDF or a complete current industry résumé.
 
-The companion repository contains legacy scientific-software work associated with chromosome/genome representations, radiation-damage modeling, classification, visualization, and reporting. Its README is the starting point for implementation and historical build context.
+The [honors and training register](HONORS_AND_TRAINING.md) separates awards and fellowships from leadership roles, courses, certificates, and research placements. It includes the recorded NASA innovation grant, Wyle recognitions, Columbia fellowship distinctions, DataCamp course record, NASA Space Radiation Summer School, and Los Alamos doctoral research placement.
 
-**NASARTI, RITCARD, RITRACKS, and GERM are related but distinct software/model names.** The companion repository is not asserted to be the complete source distribution of all four systems. Its historical repository name includes “reinforcement learning”; that name alone is not evidence of a trained reinforcement-learning implementation.
+Private home addresses, identity/background-check details, and third-party reference contact information are excluded from the public text edition. No original transcript scan is claimed to be archived here.
 
-## Sources and verification
+## Presentations and software
 
-The catalog was expanded from author-supplied CVs and publication artifacts, then reconciled with public bibliographic records where available. Private contact details, personal records, email threads, and unpublished manuscript full text have not been uploaded.
+[**Conference abstracts, posters, and historical presentations**](PRESENTATIONS.md) are cataloged separately from journal publications. Repeated presentations, working titles, and final journal versions are not automatically added together as independent journal articles.
 
-Primary discovery and verification sources include [NASA NTRS](https://ntrs.nasa.gov/), the [NASA Task Book report for task 12380](https://taskbook.nasaprs.com/tbp/tbpdf.cfm?id=12380), [NASA Langley's Space Radiation Group bibliography](https://spaceradiation.larc.nasa.gov/journalarticles.html), [PubMed](https://pubmed.ncbi.nlm.nih.gov/), journal publishers, and institutional research pages. Research profiles are discovery aids, not a substitute for checking the actual author list.
+[**Companion C# scientific-software archive**](https://github.com/artemponomarevjetski/NASA-csharp-reinforcement-learning-for-space-particles)
 
-### Publication status matters
+NASARTI, RITCARD, RITRACKS, and GERM are related but distinct software/model names. The companion repository is not asserted to be the complete source distribution of all of them. Its historical name includes “reinforcement learning”; that name alone does not establish a trained reinforcement-learning implementation.
 
-The published **2026 Suhir collaboration** is cataloged as J01. A related **2026 space-safety manuscript** is recorded separately under [manuscript history](PUBLICATIONS.md#manuscript-history-and-unresolved-records); it is **not counted as a second published paper** without a distinct final citation. Historical 2019 provisional manuscripts and an earlier DNA-clustering manuscript are handled the same way.
+## Sources, attribution, and corrections
 
-Papers by former collaborators that cite these models are **related work**, not automatically my coauthored publications. For example, the bookmarked [bi-exponential-repair poster](https://ntrs.nasa.gov/citations/20200001304) cites RITCARD and Ponomarev–Sachs work but does not list Ponomarev as an author.
+The catalog combines author-provided publication artifacts and CV records with publisher, PubMed, NASA NTRS, NASA Task Book, and institutional bibliographic records. Research-profile pages are discovery aids; actual bylines determine coauthorship. [Related literature without Ponomarev coauthorship](RELATED_WORK.md) is deliberately kept outside the authored-publication total.
 
-### How to cite or suggest a correction
+Use the original publication's author list, year, and DOI or report number when citing research. A current correction to the 1999 cluster-process paper's author order and DOI appears in its [individual record](publications/J31.md). CV-derived fields still needing reconciliation remain identified in the catalog.
 
-Cite the original paper, report, or abstract using its author list and persistent identifier. For corrections or additions, open an issue or pull request with the title, authors in published order, year, venue, document type, DOI or NASA identifier, and supporting source. CV-derived metadata and version relationships still awaiting reconciliation are marked in the catalog.
-
-This is a **personal research portfolio**, not an official NASA publication service. The catalog is an expanded record, not a certified exhaustive career total. Existing PDFs retain their original notices; linking or indexing a work does not grant redistribution rights or introduce a new license.
+This is a personal research portfolio, not an official NASA publication service. Existing documents retain their original notices. For a correction, provide the exact title, published author order, venue, year, document type, and a DOI or official source. Do not upload private editorial correspondence or internal-use notes as published research.
 
 ---
 
-**Last consolidated: November 17, 2026.**
+Last consolidated: **November 17, 2026**.
